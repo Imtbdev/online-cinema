@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Pagination = () => {
-    const [currentPage, setCurrentPage] = useState(3); // Установите текущую страницу
+    const [currentPage, setCurrentPage] = useState(3);
 
     // Функция для изменения страницы
     const handlePageClick = (page) => {
