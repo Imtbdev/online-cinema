@@ -1,14 +1,13 @@
-import Header from "./components/Header";
-import MainContent from "./components/MainContent";
-import Footer from "./components/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import MainPage from "./pages/MainPage";
+import FilmPage from "./pages/FilmPage";
 
 function App() {
   return (
-    <div className="bg-[#31363F]">
-      <Header />
-      <MainContent />
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<MainPage />} />
+      <Route path="/films/:id" element={<FilmPage />} />
+    </Routes>
   );
 }
 

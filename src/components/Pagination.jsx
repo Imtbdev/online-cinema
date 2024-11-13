@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 
 const Pagination = () => {
-    const [currentPage, setCurrentPage] = useState(3);
+    const [currentPage, setCurrentPage] = useState(1);
 
-    // Функция для изменения страницы
     const handlePageClick = (page) => {
         setCurrentPage(page);
     };
@@ -30,8 +29,8 @@ const Pagination = () => {
                             href="#"
                             onClick={() => typeof page === 'number' && handlePageClick(page)}
                             className={`flex items-center justify-center px-4 h-10 leading-tight border ${currentPage === page
-                                    ? 'bg-[#76ABAE] text-white border-[#76ABAE]'
-                                    : 'text-gray-500 border-gray-300 hover:text-gray-700 dark:text-gray-400 dark:hover:text-white'
+                                ? 'bg-[#76ABAE] text-white border-[#76ABAE]'
+                                : 'text-gray-500 border-gray-300 hover:text-gray-700 dark:text-gray-400 dark:hover:text-white'
                                 }`}
                         >
                             {page}

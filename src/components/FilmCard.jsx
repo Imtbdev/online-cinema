@@ -1,6 +1,6 @@
-const MovieCard = ({ posterSrc, title, year, genre }) => {
+const FilmCard = ({ posterSrc, title, year, genre }) => {
     return (
-        <div className="rounded-lg max-w-xs mx-auto p-4"> {/* Убедитесь, что max-w соответствует вашим требованиям */}
+        <div className="rounded-lg max-w-xs mx-auto p-4 cursor-pointer">
             <img src={posterSrc} alt={title} className="rounded-md my-4 w-full" />
             <div className="flex justify-between text-white text-sm">
                 <h3 className="font-semibold">{title}</h3>
@@ -11,4 +11,4 @@ const MovieCard = ({ posterSrc, title, year, genre }) => {
     );
 };
 
-export default MovieCard;
+export default FilmCard;
