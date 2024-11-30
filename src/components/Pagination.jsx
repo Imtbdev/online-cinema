@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const Pagination = () => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -10,14 +10,6 @@ const Pagination = () => {
     return (
         <nav className="flex justify-center py-16">
             <ul className="flex items-center -space-x-px h-10 text-base">
-                <li>
-                    <a
-                        href="#"
-                        onClick={() => handlePageClick(currentPage - 1)}
-                        className="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-white"
-                    >
-                    </a>
-                </li>
 
                 {[1, 2, 3, '...', 44, 45, 46].map((page, index) => (
                     <li key={index}>
@@ -33,15 +25,6 @@ const Pagination = () => {
                         </a>
                     </li>
                 ))}
-
-                <li>
-                    <a
-                        href="#"
-                        onClick={() => handlePageClick(currentPage + 1)}
-                        className="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-white"
-                    >
-                    </a>
-                </li>
             </ul>
         </nav>
     );
