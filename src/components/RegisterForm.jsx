@@ -17,6 +17,7 @@ const RegisterForm = () => {
                         id="email"
                         className="w-full p-3 rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-[#76ABAE] text-black"
                         placeholder="Enter your email"
+                        required
                     />
                 </div>
 
@@ -28,6 +29,7 @@ const RegisterForm = () => {
                         id="password"
                         className="w-full p-3 rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-[#76ABAE] text-black"
                         placeholder="Enter your password"
+                        required
                     />
                 </div>
 
@@ -39,6 +41,7 @@ const RegisterForm = () => {
                         id="confirmPassword"
                         className="w-full p-3 rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-[#76ABAE] text-black"
                         placeholder="Confirm your password"
+                        required
                     />
                 </div>
 
