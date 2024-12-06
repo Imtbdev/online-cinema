@@ -1,8 +1,7 @@
 import { Routes, Route } from "react-router-dom";
-import { Routes, Route } from "react-router-dom";
 import MainPage from "./pages/MainPage";
-import FilmPage from "./pages/FilmPage";
 import AuthenticationPage from "./pages/AuthenticationPage";
+import FilmPage from "./pages/FilmPage"
 
 
 function App() {
