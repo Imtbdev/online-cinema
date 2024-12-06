@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import DefaultButton from './DefaultButton';
 
 const CommentForm = () => {
     const [rating, setRating] = useState(0);
@@ -33,12 +34,7 @@ const CommentForm = () => {
                             </span>
                         ))}
                     </div>
-                    <button
-                        type="submit"
-                        className="w-full h-10 bg-[#76ABAE] rounded-md text-white font-bold"
-                    >
-                        Post
-                    </button>
+                    <DefaultButton text={'Post'} />
                 </div>
             </div>
         </form>

@@ -1,6 +1,6 @@
 import CommentForm from "./CommentForm"
 import CommentMessage from "./CommentMessage"
-import LoadCommentsBtn from "./LoadCommentsBtn"
+import DefaultButton from "./DefaultButton"
 
 const CommentsSection = () => {
     return (
@@ -12,7 +12,7 @@ const CommentsSection = () => {
                 <CommentMessage key={index} username={"SomeUsername"} commentText={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, corrupti excepturi pariatur dolor reprehenderit non voluptate! Assumenda, unde fugiat? Corporis nulla aliquid assumenda laboriosam dolor dicta tempora, vero voluptatibus ab."} rating={4} />
             ))}
 
-            <LoadCommentsBtn />
+            <DefaultButton text={"Load more"} />
         </div>
     )
 }
