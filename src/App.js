@@ -10,6 +10,7 @@ function App() {
       <Route path="/" element={<MainPage />} />
       <Route path="/films/:id" element={<FilmPage />} />
       <Route path="/register" element={<AuthenticationPage />} />
+      <Route path="/page/:number" element={<MainPage />} />
     </Routes>
   );
 }
